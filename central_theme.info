@@ -1,0 +1,16 @@
+
+name = Epf Classic
+description = Attempt to create a theme.
+version = VERSION
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+;scripts[] = myscript.js
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+;regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Right sidebar
+regions[sidebar_second] = left sidebar
+regions[footer] = Footer

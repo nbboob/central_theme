@@ -1,0 +1,684 @@
+
+/**
+ * Generic elements.
+ */
+body {
+  color: #40454b;
+  background: #fff;
+  font: normal 81.3%/1.538em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+/** General Links **/
+
+a:link {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+a:active {
+  color: #3366cc;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff5a00;
+  text-decoration: underline;
+}
+
+/** Blocks **/
+
+
+#container {
+	//background-color: #DDD;
+	min-height: 100%;
+	  margin: 0 auto;
+	max-width: 1240px;
+	min-width: 940px;
+	padding: 0 30px;
+}
+
+#content {
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+#primary-menu {
+  background-color: #2c2c2c; /*#C00;*/
+  border:0;
+  border-collapse: collapse;
+}
+
+#logo-bar {
+  border-bottom: 1px solid #001;
+  margin-bottom: 10px;
+}
+
+/** Primary Links **/
+
+.primary-links, .primary-links a:link, .primary-links a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#primary-menu .primary-links {
+  color: white;
+  font-size: 1em;
+
+}
+
+/** Secondary Links **/
+/*
+#secondary-menu {
+  border-collapse: separate;
+  background-color: #000;
+  border-bottom: 1px solid #ccc;
+}
+
+.secondary-links, .secondary-links a:link, .secondary-links a:visited {
+  color: #e4e9eb;
+}
+.secondary-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#secondary-menu .secondary-links {
+  font-size: 0.85em;
+}
+*/
+
+/** NavList **/
+
+#primary-menu a {
+  text-decoration: none;
+}
+
+#navlist {
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#navlist li {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+#navlist li a {
+  padding: 10px;
+	margin: 0;
+}
+
+#navlist li:hover a, .primary-links a.active {
+  background: #fff;
+  color: #000;
+}
+
+/** Side bars **/
+
+#sidebar-left, #sidebar-right {
+  /* padding in px not ex because IE messes up 100% width tables otherwise */
+  padding: 0 10px 75px 10px;
+  vertical-align: top;
+  /*background: #FFFAF0;*/
+}
+#sidebar-left {
+	margin-top: 5px;
+  border-right: 1px solid #ccc;
+}
+#sidebar-right {
+  /*border-right: 1px solid #ccc;*/
+}
+#sidebar-left li, #sidebar-right li {
+  font-size: 1em;
+}
+
+#sidebar-right .block h3 {
+	margin: 3px;
+	margin-left: 5px;
+}
+
+#sidebar-right .block {
+	margin-top: 20px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	background: #f5f5f5;
+}
+
+#sidebar-right .block .title {
+	background: url("images/rightBG.png") top left repeat-x;
+	height: 25px;
+	border: 1px solid #b3b3b3;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+/** Footer **/
+
+#bottom {
+	min-height: 100%;
+	margin: 0;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	border-top: 3px solid #9eb9c7;
+	//border-bottom: 1px solid #9eb9c7;
+	background: #dbe4e6;
+}
+
+#footer-message {
+  font-size: 0.85em;
+  text-align: center;
+  color: #333;
+}
+
+table#footer-menu {
+	min-height: 100%;
+  color: #333;
+	border: 10px solid #dbe4e6; /* Apparently, there is a bug displaying a grey 1px border otherwise */
+}
+
+#footer-menu td {
+  padding: 5px;
+  /*font-size: 0.9em;*/
+}
+#footer-menu .primary-links, #footer-menu a:link, #footer-menu a:visited {
+  color: #414c51;
+}
+#footer-menu a:hover {
+  text-decoration: underline;
+}
+
+#footer-menu a.active {
+	font-weight: bold;
+	background:inherit;
+}
+/** Elements **/
+
+
+h1, h2, h3 {
+  font-family: "Arial";
+}
+
+input {
+	border: 1px solid #ccc;
+}
+
+#content h2 a {
+  color: #c00;
+  font-size: 1.1em;
+	border-bottom: 1px dashed #ccc;
+}
+
+#main .title {
+	font-size: 1.5em;
+} 
+.title, .pane-title, pane-title a{
+color:#D30703;
+}
+
+.Container {
+    padding-top: 10px;
+    min-height: 320px;
+}
+
+/** Drupal **/
+
+.node {
+ /* border-bottom: 1px solid #ccc;*/
+	margin-top: 10px;
+}
+div.panel-pane div.node {
+    margin-bottom: 10px;
+}
+
+.links {
+	margin-bottom: 10px;
+}
+
+.more-link {
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.panel-pane {
+	border-bottom: 5px solid #ccc;
+}
+.item-list ul.pager{
+	padding-top:5px
+}
+.item-list .pager li {
+    padding: 0;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+/* header and bottom */
+
+#logo {
+    float: left;
+}
+#header {
+	height: 20px;
+	position: relative;
+}
+
+#globalnav {
+	text-align: right;
+	margin-top: 5px;
+}
+
+#globalnav li {
+
+	padding: 0 0.5em;
+	display: inline;
+	border-left: 1px solid #D4D4D4;
+}
+
+#globalnav li.first {
+	border-left: none;
+	padding:0;
+	position: absolute;
+	right:5.5em;
+}
+#globalnav li.noborder{
+	border-left: none;
+}
+#globalnav ul {
+    top:1.4em;
+    position: absolute;
+    padding-bottom:5px;
+    padding-left:20px;
+    right:15px
+}
+#globalnav li.border{
+   height:63px;
+   padding:2px;
+   border:1px solid #D3D3D3;
+}
+#globalnav #usershow{
+	cursor: pointer;
+}
+#globalnav ul li{
+   border:none;
+   display:block;
+   padding-top:5px
+}
+
+#navibar {
+	height: 30px;
+	background: url(images/navibar.jpg) repeat-x;
+}
+#navigation {
+	height: 30px;
+	position: relative;
+	z-index: 100;
+	padding: 0 0 0 10px;
+	float:left;
+}
+
+#navigation ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#navigation li {
+	float: left;
+	margin: 0 3px;
+	display: inline;
+	position: relative;
+}
+
+#navigation li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	display: block;
+}
+
+#navigation li a span {
+	padding: 0 10px 0 0;
+	display: block;
+}
+
+#navigation li a:hover {
+	background: url(images/navigation-l.jpg) left bottom no-repeat;
+}
+
+#navigation li a:hover span {
+	background: url(images/navigation-r.jpg) right bottom no-repeat;
+}
+
+#navigation li a.selected {
+	background: url(images/navigation-l.jpg) no-repeat;
+}
+
+#navigation li a.selected span {
+	background: url(images/navigation-r.jpg) right top no-repeat;
+}
+
+#navigation :hover>a {
+	background: url(images/navigation-l.jpg) bottom no-repeat;
+}
+
+#navigation :hover>a span {
+	background: url(images/navigation-r.jpg) bottom right no-repeat;
+}
+
+#navigation ul ul {
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	top: 30px;
+	left: -5px;
+}
+
+#navigation ul ul :hover>a {
+	background: none;
+	color: #f00;
+}
+
+#navigation table {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-collapse: collapse;
+}
+
+#navigation ul ul a {
+	height: auto;
+	font-weight: normal;
+	line-height: 14px;
+	padding: 5px 10px;
+	width: 120px;
+	background: #444;
+}
+
+#navigation ul ul a:hover {
+	color: #fff;
+	background: url(images/navibar.jpg) bottom repeat-x;
+}
+
+#navigation :hover>a {
+	background: url(images/navigation-l.jpg) left bottom no-repeat;
+}
+
+#navigation :hover>a span {
+	background: url(images/navigation-r.jpg) right bottom no-repeat;
+}
+
+#navigation ul li:hover ul,#navigation ul a:hover ul {
+	visibility: visible;
+}
+.ExtraBG {
+    background: url("images/navibar.jpg") repeat-x scroll 0 0 #FFFFFF;
+    color: WHITE;
+    float: right;
+    height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+    width: 100%;
+}
+.bottomMenu {
+    font-size: 12px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 900px;
+}
+.bottomMenu ul {
+    border-left: 1px solid #76ACD3;
+    margin-bottom: -5px;
+}
+.bottomMenu li {
+    border-left: 1px solid #76ACD3;
+    border-right: 1px solid #76ACD3;
+    display: inline;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: -1px;
+    float: left;
+}
+.nav a {
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+/* body */
+
+.SCi {
+    padding-right: 280px;
+    padding-left: 280px;
+    
+}
+.SCi #main{
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    width:98%;
+}
+.SR {
+	 position: relative;
+    float: right;
+    width: 275px;
+}
+.SL {
+	 position: relative;
+    float: left;
+    width: 275px;
+}
+/*block*/
+.SR .content,.SL .content {
+    background: none no-repeat scroll left top #F3F3F3;
+    border: 1px solid #DCDCDC;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 275px;
+}
+.SR .content .head,.SL .content .head {
+    background: url("images/rightBG.png") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #DBDBDB;
+}
+.SR .content .head h1,.SL .content .head h1 {
+    color: #D30703;
+    font-size: 17px;
+    height: 21px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 5px 0 5px 5px;
+}
+.SR .content .head .left,.SL .content .head .left {
+    float: left;
+}
+.SR .content .listsVisible,.SL .content .listsVisible {
+    float: left;
+    font-size: 12px;
+    padding-bottom: 0;
+    padding-top:5px;
+    width: 275px;
+    line-height: 16px;
+}
+.SR ul,.SL ul {
+    margin: 0;
+    padding: 0px;
+}
+.SR .content .listsVisible li,.SL .content .listsVisible li {
+    background: url("images/point.gif") no-repeat scroll 0 15px transparent;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.SR li,.SL li {
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.SR .block table,.SL .block table {
+    width: 100%;
+}
+.SR .block tbody,.SL .block tbody {
+    border-top: 0px;
+}
+.SR .block tr.even, tr.odd,.SL.block tr.even, tr.odd {
+    background: none;
+    border-bottom: 0px;
+    padding: 0.1em 0.6em;
+}
+ul li.collapsed {
+    list-style-image: none;
+    list-style-type: none;
+}
+ul li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+/* login form*/
+.SR .content .form-item, .form-actions,.SL .content .form-item, .form-actions {
+    margin-left: 1em;
+    margin-top:0.5em;
+    margin-bottom:0.5em
+}
+
+.SR .content .listsVisible .item-list ul li,.SL .content .listsVisible .item-list ul li {
+	  background:NONE;
+	  padding-bottom: 0em;
+    padding-left: 0em;
+    padding-top: 0em;
+	  
+}
+
+/* Search block in region header. */
+
+#header-block{
+		float:right;
+    padding: 3px 10px 0 0;
+}
+/* user view setting */
+
+a.user_icon{
+padding-right:2px;
+}
+.profile .field {
+    display:table;
+}
+
+/* article head */
+.VoteHead .content {
+float:left;
+}
+.PostHeadVote {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 60px;
+}
+
+.PostHeadTitle {
+	display: inline;
+/*	float: right;
+	width: 890px;*/
+}
+
+.PostHeadTitle h2{
+    margin: 0 0 0px 0;
+    padding: 0;
+    font-size:16px;
+}
+.PostHeadTitle h2 a{
+    font-size:16px;
+}
+.PostHeadTitle .prefix{
+   color:#40454B;
+}
+.VoteHead{
+	height:auto;
+}
+.VoteHead .PostHeadTitle{
+	padding-left:70px;
+	display: block;
+}
+.node-article .PostHeadTitle, .node-blog .PostHeadTitle,.node-editorial .PostHeadTitle{
+	padding-left:0px;
+}
+.VoteHead p {
+    margin: -1px;
+}
+
+.VoteHead .submitted {
+color: #828282;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+div.plus1-widget {
+    margin-bottom: 1px;
+}
+
+div.plus1-widget small {
+    font-size: 12px;
+}
+.node_type{
+	color: #D30703;
+	
+}
+/* comment */
+.comment {
+    clear: left;
+    font-size: 12px;
+    margin: 15px auto 0;
+    padding: 5px 0 0;
+    position: relative;
+}
+.comment p, .content p{
+    margin:0;
+}
+#main .comment-wrapper .title{
+	font-size: 17px;
+}
+.comments{
+	 border-top: 1px dashed #CCCCCC;
+	 border-bottom: 1px dashed #CCCCCC;
+}
+.comment-form .form-type-item{
+	display:none;
+}
+.submitted span.plus1-widget-comment{
+	float:right;
+	margin-right:5px;
+}
+
+div.comment_title{
+	width:100%;
+	border-bottom: 1px dashed #CCCCCC;
+	margin-bottom:5px;
+}
+/* Calendar */
+.item-list ul.pager {
+    padding-top: 0px;
+}
+
+.date-nav-wrapper .date-nav {
+  padding-bottom: 0em
+}
